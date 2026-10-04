@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Toolkit</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <h1>Notes <span>Toolkit</span></h1>
+        <p>Keep your thoughts in one place.</p>
+      </header>
+
+      <main>
+        <section class="panel" aria-labelledby="add-heading">
+          <h2 id="add-heading">Add a note</h2>
+
+          <form id="note-form">
+            <label for="note-input">Your note</label>
+            <input
+              id="note-input"
+              name="note"
+              type="text"
+              maxlength="201"
+              placeholder="Write something..."
+            />
+
+            <label for="note-category">Category</label>
+            <select id="note-category" name="category">
+              <option value="Personal">Personal</option>
+              <option value="Work">Work</option>
+              <option value="Study">Study</option>
+            </select>
+
+            <button type="submit">Add Note</button>
+          </form>
+
+          <p id="error-message" role="alert" aria-live="polite"></p>
+        </section>
+
+        <section class="panel notes-panel" aria-labelledby="notes-heading">
+          <h2 id="notes-heading">Your notes</h2>
+
+          <label class="visually-hidden" for="search-input">Search notes</label>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search your notes..."
+          />
+
+          <p id="note-count" aria-live="polite">You have no notes yet.</p>
+          <ul id="notes-list"></ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>Notes Toolkit · Your thoughts, organized.</p>
+      </footer>
+    </div>
+  </body>
+</html>
