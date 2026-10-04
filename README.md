@@ -1,5 +1,6 @@
 # quicknotes-app
-# Notes Toolkit
+# welcome and try out
+# Notes Toolkit 
 
 Notes Toolkit is a small, responsive browser app for writing, categorizing, searching, and managing notes. Notes are saved in the browser, so they remain available after refreshing the page.
 
